@@ -61,7 +61,7 @@ function renderBooks(currentPage) {
     div.innerHTML = `
     <a href="${book.link}" target="_blank" class="nav_menu-bts-download">
     Descarga
-    <img src="download-rounded.svg" alt="">
+    <img src="./img/download-rounded.svg" alt="">
     </a>
     <div class="imgcontent"><img src="${book.img}" alt=""></div>
       <div class="titlecontent"><h3>${book.nombre}</h3></div>
