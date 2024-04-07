@@ -7,7 +7,7 @@
 } /*
 */
 
-
+body{}
 
 .CountCantidad {
   background: -moz-linear-gradient(
@@ -127,12 +127,13 @@ img.gifimagen {
   z-index: 100;
 }
 /* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+
 #outer-orbit {
   position: absolute;
   top: 0;
   left: 0;
-  width: 450px;
-  height: 450px;
+  width: 276px;
+    height: 261px;
   border: 1.9px #f5efdf33 solid;
   border-radius: 100%;
   -webkit-animation: spin-right 180s linear infinite;
@@ -409,10 +410,7 @@ footer#contact img {
 .ContenedorFooter {
   display: flex;
   flex-wrap: wrap;
-  border-top: solid 1px white;
-  width: 100vw;
   flex-direction: row;
-  height: 70svh;
   justify-content: center;
   align-items: center;
 }
@@ -456,12 +454,21 @@ footer#contact img {
   display: none !important;
 }
 .checklist {
+  display: flex;
   border: transparent;
   padding: 10px;
   margin: 10px;
   font-family: "Alegreya Sans";
   width: 21rem;
   color: black;
+  flex-direction: column;
+  gap: 16px;
+}
+.checklist > a {
+  color: black;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+
 }
 
 .checklist h2 {
@@ -862,6 +869,7 @@ img.fontimg {
   position: absolute;
   clip-path: polygon(12.3% 0%, 100% 0%, 100% 100%, 0% 100%);
   border-radius: 4rem 1rem;
+  display: none;
 }
 /**/
 
@@ -1316,6 +1324,14 @@ section.section_3 {
   }
 }
 @media only screen and (min-width: 768px) {
+  #outer-orbit {
+    width: 450px;
+        height: 450px;
+    }
+  .ContenedorFooter {
+    width: 100vw;
+    height: 70svh;
+}
   .btsnavbar {
     display: flex;
   }
@@ -1378,6 +1394,9 @@ section.section_3 {
     display: flex;
     filter: grayscale(1);
     width: 28vw;
+  }
+  img.fontimg {
+  display: flex;
   }
 .accesspoint{
   display: flex;

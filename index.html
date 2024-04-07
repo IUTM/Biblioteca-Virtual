@@ -20,8 +20,6 @@
         <div class="btsnavbar">
           <a href="#home" onclick="timeouttoggle()"><span>Inicio</span></a>
           <a href="#about" onclick=""><span>Nosotros</span></a>
-          <a href="#new"><span>Nuevos</span></a>
-          <a href=""><span>Contacto</span></a>
           <a href=""><span>Pedidos</span></a>
           <a href="biblio.html"><span>Biblioteca</span></a>
         </div>
@@ -33,12 +31,10 @@
           <a><img class="nav_bar-Img-Logo" link="" src="./assets/Logo.png" alt="Logo" /></a>
       
           <div class="checklist">
-            <h2 id="checklist-Formato">Inicio</h2>
-            <h2 id="checklist-Formato">Nosotros</h2>
-            <h2 id="checklist-Formato">Nuevos</h2>
-            <h2 id="checklist-Formato">Contacto</h2>
-            <h2 id="checklist-Formato">Pedidos</h2>
-            <h2 id="checklist-Formato">Biblioteca</h2>
+            <a href="#home" onclick="timeouttoggle()"><span>Inicio</span></a>
+          <a href="#about" onclick=""><span>Nosotros</span></a>
+          <a href=""><span>Pedidos</span></a>
+          <a href="biblio.html"><span>Biblioteca</span></a>
           </div>
           </div>
       
@@ -135,15 +131,6 @@
       <footer id="contact">
         <div class="ContenedorFooter">
           <div class="contentinfo1">
-            <h3>Aprende mas sobre nosotros</h3>
-              <div class="links-about">
-                <a href=""><span>Nosotros</span></a>
-                <a href=""><span>Saber mas</span></a>
-                <a href=""><span>Como pedir un libro</span></a>
-                <a href=""><span>Preguntas Frecuentes</span></a>
-              </div>
-            </div>
-          <div class="contentinfo1">
             <h3>Mantente en contacto con nosotros</h3>      
               <div class="links-about">
                 <a href="https://www.facebook.com/"><span>Facebook</span></a>
@@ -169,6 +156,15 @@
 
 <div class="copyright"><p>Copyright: by ViktorChs, design by ViktorChs </p></div>
   </body>
-  <script src="./Biblioteca/Libros.js"></script>
+<script>
+  
+const toggleMenuFilters = document.querySelector('.etc')
+const blockmenubooks = document.querySelector('.blockcontentmenuopen')
+function toggleMenuf() {
+  blockmenubooks.classList.toggle("open")
+document.body.classList.toggle("open")
+}
+
+</script>
 
 </html>

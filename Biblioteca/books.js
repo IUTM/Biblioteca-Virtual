@@ -7,7 +7,7 @@ const viewmenubook = document.querySelector(".nav_menu-view-book")
 const newbooks = document.querySelector(".contenedor_books")
 
 bookArchive.forEach((book) => {
-  if (book.id <= 136) {
+  if (book.id <= 20) {
     const div = document.createElement("div");
     div.classList.add("newbooks");
     div.setAttribute("onclick", `viewBooknew(${book.id})`);
@@ -87,7 +87,7 @@ function renderBooks() {
 // Función para renderizar la barra de paginación
 // Función para filtrar los libros según los valores de los checkboxes marcados
 let currentPage = 1;
-const booksPerPage = 136;
+const booksPerPage = 20;
 const totalPages = Math.ceil(bookArchive.length / booksPerPage);
 
 
