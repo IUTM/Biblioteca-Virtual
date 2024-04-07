@@ -1455,6 +1455,9 @@ section.section_3 {
   .contentinfo2 {
     margin: 1px 39px;
   }
+  .links-about a {
+    font-size: 14px;
+}
 
   .menu {
     width: 300px;
